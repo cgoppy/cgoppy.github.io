@@ -7,18 +7,38 @@
 
 <main>
   <h1>Ethan's Blog</h1>
-  <h2>The subtitle, if you want it</h2>
-  <h4>April 1, 2015</h4>
+  <h2>Ruby Classes</h2>
+  <h4>April 19, 2015</h4>
 
   <section>
     <p>
-      Your first paragraph goes here.
+      Ruby Classes are an important tool.  Most importantly, they allow batch edits and changes to objects within the Class. They are simple to use and a pleasure to work with.
     </p>
     <p>
-        2nd para
+       As an example, I will create a class and include instance variables and instance methods for this object. I will also allow batch edits to the class. The following allows the venue/date of the MLB game to be changed and inputted, and prints the schedule for the user to see. 
     </p>
     <p>
-        3rd para
+    <u>Example</u>
+          Class MLB
+          def initialize (venue, date)  #example of an instance method
+          @venue = venue
+          @date = date #example of instance variables
+          end
+          def venue
+          @venue
+          end
+          def date
+          @date
+          end
+          def printout
+          puts “The MLB game is for the #{date} taking place at: #{venue}”
+          end
+          end 
+
+          e1 = MLB.new(“Yankees Stadium”, “April 19, 2015”)
+          e1.printout
+
+          "The MLB game is for April 19, 2015 taking place at: Yankees"
     </p>
 
       <!-- copy and paste as many sections as you want to add paragraphs -->
